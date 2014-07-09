@@ -27,14 +27,15 @@ class Timetable < ActiveRecord::Base
       @train_locations = i.css('TrainAtPathLocation')
 
       if i.css('TrainPathNotAvailable')
-        @first_station_not_available = i.css('FromLocationIdent LocationSubsidiaryCode')
-        puts @train_location_last = i.css('ToLocationIdent LocationSubsidiaryCode').text
+        puts 'first IN'
+        # @first_station_not_available = i.css('FromLocationIdent LocationSubsidiaryCode')
+        # puts @train_location_last = i.css('ToLocationIdent LocationSubsidiaryCode').text
         break
       else
-        puts 'IN'
-        @train_location_first = i.css('TrainAtPathLocation LocationIdent LocationSubsidiaryCode').first
-
-        puts @train_location_last = i.css('TrainAtPathLocation LocationIdent LocationSubsidiaryCode').last
+        puts 'second IN'
+        # @train_location_first = i.css('TrainAtPathLocation LocationIdent LocationSubsidiaryCode').first
+        #
+        # puts @train_location_last = i.css('TrainAtPathLocation LocationIdent LocationSubsidiaryCode').last
       end
       # Timetable.create(
       #     train_id: @train_id,
