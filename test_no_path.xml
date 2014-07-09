@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BVResponseTimeTable xmlns="urn:BVTAF">
+  <MessageHeader>
+    <MessageStatus>1</MessageStatus>
+    <MessageReference>
+      <MessageType MessageTypeCode="0"/>
+      <MessageNumber>627585</MessageNumber>
+      <MessageDateTime>2014-04-15T12:27:24.17</MessageDateTime>
+    </MessageReference>
+    <Sender>10001</Sender>
+    <Recipient>10035</Recipient>
+  </MessageHeader>
+
+  <TrainTimeTable>
+    <TrainBusinessIdent>
+      <PathIdent>041986</PathIdent>
+      <ScheduledDepartureDateTime>2014-04-24T15:17:00</ScheduledDepartureDateTime>
+      <PathDepartureLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">ÄH</LocationSubsidiaryCode>
+      </PathDepartureLocation>
+    </TrainBusinessIdent>
+    <TrainIdent>
+      <PathIdent>041986</PathIdent>
+      <ScheduledDepartureDateTime>2014-04-24T15:17:00</ScheduledDepartureDateTime>
+      <PathDepartureLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">ÄH</LocationSubsidiaryCode>
+      </PathDepartureLocation>
+    </TrainIdent>
+    <NextTrainIdent>
+      <PathIdent>041987</PathIdent>
+      <ScheduledDepartureDateTime>2014-04-24T18:07:00</ScheduledDepartureDateTime>
+      <PathDepartureLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">JÖ</LocationSubsidiaryCode>
+      </PathDepartureLocation>
+    </NextTrainIdent>
+    <RelatedCompany>
+      <CompanyCode>10035</CompanyCode>
+      <RelationType>TO</RelationType>
+    </RelatedCompany>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">ÄH</LocationSubsidiaryCode>
+      </LocationIdent>
+      <DepartureTimeAtLocation>2014-04-24T15:17:00</DepartureTimeAtLocation>
+      <DepartureTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">3</LocationSubsidiaryCode>
+      </DepartureTrackAtLocation>
+      <ActivityCode>GP</ActivityCode>
+    </TrainAtPathLocation>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">DIÖ</LocationSubsidiaryCode>
+      </LocationIdent>
+      <DepartureTimeAtLocation>2014-04-24T15:27:00</DepartureTimeAtLocation>
+      <DepartureTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">999</LocationSubsidiaryCode>
+      </DepartureTrackAtLocation>
+    </TrainAtPathLocation>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">ERA</LocationSubsidiaryCode>
+      </LocationIdent>
+      <DepartureTimeAtLocation>2014-04-24T15:34:00</DepartureTimeAtLocation>
+      <DepartureTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">3</LocationSubsidiaryCode>
+      </DepartureTrackAtLocation>
+    </TrainAtPathLocation>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">VS</LocationSubsidiaryCode>
+      </LocationIdent>
+      <DepartureTimeAtLocation>2014-04-24T15:41:00</DepartureTimeAtLocation>
+      <DepartureTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">2</LocationSubsidiaryCode>
+      </DepartureTrackAtLocation>
+    </TrainAtPathLocation>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">BLD</LocationSubsidiaryCode>
+      </LocationIdent>
+      <DepartureTimeAtLocation>2014-04-24T15:45:00</DepartureTimeAtLocation>
+      <DepartureTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">999</LocationSubsidiaryCode>
+      </DepartureTrackAtLocation>
+    </TrainAtPathLocation>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">AV</LocationSubsidiaryCode>
+      </LocationIdent>
+      <DepartureTimeAtLocation>2014-04-24T15:50:00</DepartureTimeAtLocation>
+      <DepartureTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">2</LocationSubsidiaryCode>
+      </DepartureTrackAtLocation>
+    </TrainAtPathLocation>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">GÅP</LocationSubsidiaryCode>
+      </LocationIdent>
+      <DepartureTimeAtLocation>2014-04-24T15:53:00</DepartureTimeAtLocation>
+      <DepartureTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">3</LocationSubsidiaryCode>
+      </DepartureTrackAtLocation>
+    </TrainAtPathLocation>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">MO</LocationSubsidiaryCode>
+      </LocationIdent>
+      <DepartureTimeAtLocation>2014-04-24T15:58:00</DepartureTimeAtLocation>
+      <DepartureTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">2</LocationSubsidiaryCode>
+      </DepartureTrackAtLocation>
+    </TrainAtPathLocation>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">LNS</LocationSubsidiaryCode>
+      </LocationIdent>
+      <DepartureTimeAtLocation>2014-04-24T16:03:00</DepartureTimeAtLocation>
+      <DepartureTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">999</LocationSubsidiaryCode>
+      </DepartureTrackAtLocation>
+    </TrainAtPathLocation>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">GRD</LocationSubsidiaryCode>
+      </LocationIdent>
+      <DepartureTimeAtLocation>2014-04-24T16:08:00</DepartureTimeAtLocation>
+      <DepartureTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">3</LocationSubsidiaryCode>
+      </DepartureTrackAtLocation>
+    </TrainAtPathLocation>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">RK</LocationSubsidiaryCode>
+      </LocationIdent>
+      <DepartureTimeAtLocation>2014-04-24T16:14:00</DepartureTimeAtLocation>
+      <DepartureTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">999</LocationSubsidiaryCode>
+      </DepartureTrackAtLocation>
+    </TrainAtPathLocation>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">SY</LocationSubsidiaryCode>
+      </LocationIdent>
+      <DepartureTimeAtLocation>2014-04-24T16:20:00</DepartureTimeAtLocation>
+      <DepartureTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">2</LocationSubsidiaryCode>
+      </DepartureTrackAtLocation>
+    </TrainAtPathLocation>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">AHM</LocationSubsidiaryCode>
+      </LocationIdent>
+      <DepartureTimeAtLocation>2014-04-24T16:27:00</DepartureTimeAtLocation>
+      <DepartureTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">999</LocationSubsidiaryCode>
+      </DepartureTrackAtLocation>
+    </TrainAtPathLocation>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">UTP</LocationSubsidiaryCode>
+      </LocationIdent>
+      <DepartureTimeAtLocation>2014-04-24T16:33:00</DepartureTimeAtLocation>
+      <DepartureTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">999</LocationSubsidiaryCode>
+      </DepartureTrackAtLocation>
+    </TrainAtPathLocation>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">GT</LocationSubsidiaryCode>
+      </LocationIdent>
+      <DepartureTimeAtLocation>2014-04-24T16:39:00</DepartureTimeAtLocation>
+      <DepartureTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">3</LocationSubsidiaryCode>
+      </DepartureTrackAtLocation>
+    </TrainAtPathLocation>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">N</LocationSubsidiaryCode>
+      </LocationIdent>
+      <ArrivalTimeAtLocation>2014-04-24T16:47:00</ArrivalTimeAtLocation>
+      <ArrivalTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">8</LocationSubsidiaryCode>
+      </ArrivalTrackAtLocation>
+      <DepartureTimeAtLocation>2014-04-24T17:00:00</DepartureTimeAtLocation>
+      <DepartureTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">8</LocationSubsidiaryCode>
+      </DepartureTrackAtLocation>
+    </TrainAtPathLocation>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">ÄNG</LocationSubsidiaryCode>
+      </LocationIdent>
+      <DepartureTimeAtLocation>2014-04-24T17:10:00</DepartureTimeAtLocation>
+      <DepartureTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">999</LocationSubsidiaryCode>
+      </DepartureTrackAtLocation>
+    </TrainAtPathLocation>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">FM</LocationSubsidiaryCode>
+      </LocationIdent>
+      <DepartureTimeAtLocation>2014-04-24T17:15:00</DepartureTimeAtLocation>
+      <DepartureTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">999</LocationSubsidiaryCode>
+      </DepartureTrackAtLocation>
+    </TrainAtPathLocation>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">TH</LocationSubsidiaryCode>
+      </LocationIdent>
+      <DepartureTimeAtLocation>2014-04-24T17:22:00</DepartureTimeAtLocation>
+      <DepartureTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">1</LocationSubsidiaryCode>
+      </DepartureTrackAtLocation>
+    </TrainAtPathLocation>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">HKA</LocationSubsidiaryCode>
+      </LocationIdent>
+      <DepartureTimeAtLocation>2014-04-24T17:28:00</DepartureTimeAtLocation>
+      <DepartureTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">999</LocationSubsidiaryCode>
+      </DepartureTrackAtLocation>
+    </TrainAtPathLocation>
+    <TrainAtPathLocation>
+      <LocationIdent>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="05">JÖ</LocationSubsidiaryCode>
+      </LocationIdent>
+      <ArrivalTimeAtLocation>2014-04-24T17:35:00</ArrivalTimeAtLocation>
+      <ArrivalTrackAtLocation>
+        <CountryCode>SE</CountryCode>
+        <LocationPrimaryCode>99999</LocationPrimaryCode>
+        <LocationSubsidiaryCode LocationSubsidiaryTypeCode="01">4</LocationSubsidiaryCode>
+      </ArrivalTrackAtLocation>
+    </TrainAtPathLocation>
+    <AdvertisedTrainIdent>041986</AdvertisedTrainIdent>
+    <DivertedTrainIdent/>
+    <TrainType>GT</TrainType>
+  </TrainTimeTable>
+
+
+  <RelatedReference>
+    <RelatedType MessageTypeCode="integer"/>
+    <RelatedNumber>1397557642</RelatedNumber>
+    <RelatedMessageDateTime>2014-04-15T12:27:22</RelatedMessageDateTime>
+  </RelatedReference>
+</BVResponseTimeTable>
