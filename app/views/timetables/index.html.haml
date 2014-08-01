@@ -1,16 +1,39 @@
+:css
+  .controls{
+    margin-top: 20px
+
+  }
+
 %section.panel.panel-default
   %h4.panel-heading
-    the header
+    Looking for train_timetables
   %p.panel-body
-    hola guapo!!
+    About cargo trains
     %span.glyphicon.glyphicon-star
-
+    %span.glyphicon.glyphicon-star
+    %span.glyphicon.glyphicon-star
+    %span.glyphicon.glyphicon-star
+    %span.glyphicon.glyphicon-star
+%section.register.container
+  .row
+    .span10.offset1
+      %form.form-horizontal
+        %header
+          %h1 Finder
+        %fieldset.actions.control-group
+          .controls
+            =form_tag search_train_path, class: 'span5' do
+              %label.control-label Train number
+              %input(type="text" placeholder="search for schedule " name= 'search_term')
+              %button.btn(type="submit") Search
+%br
 %section.well.well-lg.well-center
-  %h1
-    Huge thing going on
+  %h3
+    Showing of timetables:
   %ul.list-unstyled
-    %li
-      %a
-        %p Web thing
+    - @results.each do |t|
+      %li
+        %p= t.train_id
+        %p= t.start_location
 
 

@@ -1,0 +1,122 @@
+
+  @first_station_not_available
+  @last_station_not_available
+  @stations_array = []
+  @train_location_last
+  @datetime_a
+  @datetime_b
+  @arrival_time
+  @last_train_location
+
+ #just for creating a new local xml-file
+  def self.fetching_data(url)
+    File.new('your file', 'w')
+    data = Nokogiri::XML(open(url))
+    File.open('your file', 'w') { |f| f.write data }
+  end
+
+  def self.opening_file
+    @train_at_path_locations
+    doc = Nokogiri::XML(File.open("fixed.xml"))
+    @train_tables = doc.css("TrainTimeTable")
+
+
+    @train_tables.each do |i|
+
+      @train_id = i.css('TrainIdent PathIdent').text
+      @train_locations = i.css('TrainAtPathLocation')
+      @departure_time =   i.css('TrainAtPathLocation DepartureTimeAtLocation').first.text
+      @first_train_location = i.css('TrainAtPathLocation LocationIdent LocationSubsidiaryCode').first.text
+
+
+      if i.at_css('TrainPathNotAvailable')
+        @end_location = i.css('ToLocationIdent LocationSubsidiaryCode').text
+        @train_locations.each do |j|
+          if j.at_css('LocationIdent LocationSubsidiaryCode').text == @end_location
+            if j.at_css('DepartureTimeAtLocation')
+              @arrival_time = j.css('DepartureTimeAtLocation').text
+            else
+              @arrival_time = j.css('ArrivalTimeAtLocation').text
+            end
+          end
+        end
+        @last_train_location  = @end_location
+      else
+        @end_location = i.css('TrainAtPathLocation LocationIdent LocationSubsidiaryCode').last.text
+        @last_train_location = @end_location
+        @arrival_time = i.css('TrainAtPathLocation ArrivalTimeAtLocation').last.text
+      end
+
+      Timetable.create(
+          train_id: @train_id,
+          start_location: @first_train_location,
+          departure_time: @departure_time,
+          final_location: @last_train_location,
+          arrival_time: @arrival_time
+      )
+
+    end
+    # this part is about to create more services once we get more information
+    # @stations_array = @train_locations.map do |j|
+    #   j.css('LocationIdent LocationSubsidiaryCode')
+    # end
+
+    #cleaning_timetable(@stations, @first_station_not_available.text, @last_station_not_available.text)
+
+  end
+
+  def self.comparing_datetimes(datetime_a, datetime_b)
+    first = Time.parse(datetime_a)
+    second = Time.parse(datetime_b)
+    puts 'printing time vars: '
+    puts first
+    puts second
+    puts 'sant' if first  < second
+  end
+
+  def self.cleaning_timetable(station_list, from, to)
+      result = []
+      result << to
+      removing_items = true
+      station_list.each do |station|
+        result << station unless removing_items == true
+
+        if station.text == from
+          removing_items = true
+        end
+        if station.text == to
+          removing_items = false
+        end
+      end
+
+    puts result
+  end
+
+
+
+    #@final_stop =
+
+
+    #puts 'RESULTS: '
+    #puts @final_stop.map{ |i| i}
+    #puts @final_stop
+
+
+    #@train_at_path_locations = doc.css("TrainTimeTable TrainAtPathLocation").map {|node| node}
+    #@train_path_not_available = doc.css('TrainTimeTable TrainPathNotAvailable').map { |node| node}
+    #puts @train_at_path_locations.length
+
+
+    #puts @train_path_not_available.count
+    # @listing_th_times = @train_path_not_available.map{ |i| i.css('ToLocationIdent LocationSubsidiaryCode').text}
+    # puts @listing_th_times
+
+    #puts @train_at_path_locations[20]
+
+    #puts 'Departure Time: '
+    #puts @train_at_path_locations[20].css('DepartureTimeAtLocation').text
+
+    #puts @train_at_path_locations.search('TrainPathNotAvailable').map{|i| i }
+
+
+    # [100,200,300,400].inject(0) {|count, element| count+1}

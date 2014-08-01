@@ -32,7 +32,12 @@ gem 'spring',        group: :development
 
 gem  'nokogiri', '~> 1.6.1'
 gem 'awesome_print', :require => 'ap'
+gem 'draper'
 
+group :test, :development do
+  gem 'rspec-rails'
+
+end
 
 
 # Use ActiveModel has_secure_password

@@ -11,13 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140610181853) do
+ActiveRecord::Schema.define(version: 20140710141618) do
 
   create_table "timetables", force: true do |t|
     t.integer  "train_id"
     t.string   "start_location"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "departure_time"
+    t.datetime "arrival_time"
     t.string   "final_location"
   end
 
