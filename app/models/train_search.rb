@@ -1,14 +1,17 @@
 class TrainSearch
 
-    attr_reader :data
+  attr_accessor :data
 
     def initialize
+
       @data = Timetable.all
+      #require 'pry'; binding.pry
     end
 
     def rows
       @rows ||= @data.map {|row| Row.new(row)}
     end
+
 
 
     # Do this because we need to parse the date into a time to sort

@@ -1,7 +1,7 @@
 class TimetablesController < ApplicationController
   def index
     @timetables = Timetable.all
-    train = TrainSearch.new(@timetables)
+    train = TrainSearch.new
     @results = train.find_train_and_next_routes(params[:search_term])
   end
 
