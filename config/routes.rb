@@ -5,8 +5,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root to:'timetables#index'
 
-  post '/search_train', to: 'timetables#index'
+  resources :timetables, only: [:index] do
 
+  end
 
 
   # Example of regular route:

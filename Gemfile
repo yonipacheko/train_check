@@ -33,6 +33,8 @@ gem 'spring',        group: :development
 gem  'nokogiri', '~> 1.6.1'
 gem 'awesome_print', :require => 'ap'
 gem 'draper'
+gem 'seed_dump'
+
 
 group :test, :development do
   gem 'rspec-rails'

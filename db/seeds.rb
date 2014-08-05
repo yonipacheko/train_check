@@ -1,7 +1,44 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Timetable.create!([
+  {train_id: 41902, start_location: "CG", departure_time: "2014-04-24 22:42:00", arrival_time: "2014-04-25 07:52:00", final_location: "BÄ"},
+  {train_id: 41904, start_location: "BÄ", departure_time: "2014-04-25 07:52:00", arrival_time: "2014-04-25 22:35:00", final_location: "BJF"},
+  {train_id: 41903, start_location: "BJF", departure_time: "2014-04-24 02:16:00", arrival_time: "2014-04-24 17:51:00", final_location: "LS"},
+  {train_id: 41905, start_location: "BJF", departure_time: "2014-04-24 02:16:00", arrival_time: "2014-04-24 16:15:00", final_location: "BÄ"},
+  {train_id: 41907, start_location: "BÄ", departure_time: "2014-04-24 16:15:00", arrival_time: "2014-04-24 17:51:00", final_location: "LS"},
+  {train_id: 41914, start_location: "CG", departure_time: "2014-04-24 20:46:00", arrival_time: "2014-04-25 05:34:00", final_location: "BÄ"},
+  {train_id: 41916, start_location: "BÄ", departure_time: "2014-04-25 05:34:00", arrival_time: "2014-04-25 22:25:00", final_location: "BJF"},
+  {train_id: 41919, start_location: "BJF", departure_time: "2014-04-24 02:45:00", arrival_time: "2014-04-24 19:33:00", final_location: "ÅGY"},
+  {train_id: 41943, start_location: "ÅGY", departure_time: "2014-04-24 19:33:00", arrival_time: "2014-04-25 00:38:00", final_location: "KBÄ"},
+  {train_id: 41920, start_location: "KBÄ", departure_time: "2014-04-25 00:38:00", arrival_time: "2014-04-25 01:00:00", final_location: "JBK"},
+  {train_id: 41927, start_location: "JBK", departure_time: "2014-04-25 01:00:00", arrival_time: "2014-04-25 04:41:00", final_location: "CG"},
+  {train_id: 41964, start_location: "BÄ", departure_time: "2014-04-24 05:34:00", arrival_time: "2014-04-24 14:38:00", final_location: "BDN"},
+  {train_id: 41966, start_location: "BDN", departure_time: "2014-04-24 14:46:00", arrival_time: "2014-04-24 22:25:00", final_location: "BJF"},
+  {train_id: 41979, start_location: "BDN", departure_time: "2014-04-24 10:43:00", arrival_time: "2014-04-24 19:33:00", final_location: "ÅGY"},
+  {train_id: 41982, start_location: "CG", departure_time: "2014-04-24 00:41:00", arrival_time: "2014-04-24 03:21:00", final_location: "LÅ"},
+  {train_id: 41983, start_location: "LÅ", departure_time: "2014-04-24 03:21:00", arrival_time: "2014-04-24 05:50:00", final_location: "JÖGB"},
+  {train_id: 41984, start_location: "JÖGB", departure_time: "2014-04-24 06:30:00", arrival_time: "2014-04-24 06:38:00", final_location: "JÖ"},
+  {train_id: 41985, start_location: "JÖ", departure_time: "2014-04-24 07:21:00", arrival_time: "2014-04-24 09:28:00", final_location: "ÄH"},
+  {train_id: 41986, start_location: "ÄH", departure_time: "2014-04-24 15:17:00", arrival_time: "2014-04-24 17:35:00", final_location: "JÖ"},
+  {train_id: 41987, start_location: "JÖ", departure_time: "2014-04-24 18:07:00", arrival_time: "2014-04-24 18:15:00", final_location: "JÖGB"},
+  {train_id: 41988, start_location: "JÖGB", departure_time: "2014-04-24 19:13:00", arrival_time: "2014-04-24 21:44:00", final_location: "LÅ"},
+  {train_id: 41989, start_location: "LÅ", departure_time: "2014-04-24 21:44:00", arrival_time: "2014-04-25 00:34:00", final_location: "CG"},
+  {train_id: 42021, start_location: "N", departure_time: "2014-04-24 15:40:00", arrival_time: "2014-04-24 19:17:00", final_location: "HBGB"},
+  {train_id: 76230, start_location: "LE", departure_time: "2014-04-24 18:16:00", arrival_time: "2014-04-24 18:24:00", final_location: "GST"},
+  {train_id: 42030, start_location: "GST", departure_time: "2014-04-24 18:59:00", arrival_time: "2014-04-24 19:29:00", final_location: "BDN"},
+  {train_id: 42031, start_location: "BDN", departure_time: "2014-04-24 20:09:00", arrival_time: "2014-04-25 14:45:00", final_location: "N"},
+  {train_id: 76256, start_location: "LE", departure_time: "2014-04-24 15:37:00", arrival_time: "2014-04-24 15:44:00", final_location: "GST"},
+  {train_id: 42056, start_location: "GST", departure_time: "2014-04-24 17:09:00", arrival_time: "2014-04-24 17:30:00", final_location: "BDN"},
+  {train_id: 42057, start_location: "BDN", departure_time: "2014-04-24 18:19:00", arrival_time: "2014-04-25 09:22:00", final_location: "HPBG"},
+  {train_id: 42053, start_location: "HPBG", departure_time: "2014-04-25 09:25:00", arrival_time: "2014-04-25 13:29:00", final_location: "GBCO"},
+  {train_id: 76254, start_location: "GBCO", departure_time: "2014-04-25 13:41:00", arrival_time: "2014-04-25 13:47:00", final_location: "SÄVL"},
+  {train_id: 42200, start_location: "HBGB", departure_time: "2014-04-24 20:06:00", arrival_time: "2014-04-24 23:10:00", final_location: "N"},
+  {train_id: 42300, start_location: "N", departure_time: "2014-04-24 00:07:00", arrival_time: "2014-04-24 18:45:00", final_location: "BDN"},
+  {train_id: 42301, start_location: "BDN", departure_time: "2014-04-24 19:53:00", arrival_time: "2014-04-24 20:22:00", final_location: "GST"},
+  {train_id: 76291, start_location: "GST", departure_time: "2014-04-24 20:58:00", arrival_time: "2014-04-24 21:05:00", final_location: "LE"},
+  {train_id: 76203, start_location: "SÄVL", departure_time: "2014-04-24 19:53:00", arrival_time: "2014-04-24 19:58:00", final_location: "GBCO"},
+  {train_id: 42504, start_location: "GBCO", departure_time: "2014-04-24 20:28:00", arrival_time: "2014-04-25 14:23:00", final_location: "BDN"},
+  {train_id: 42505, start_location: "BDN", departure_time: "2014-04-25 14:59:00", arrival_time: "2014-04-25 15:21:00", final_location: "GST"},
+  {train_id: 76295, start_location: "GST", departure_time: "2014-04-25 15:51:00", arrival_time: "2014-04-25 15:57:00", final_location: "LE"},
+  {train_id: 69783, start_location: "JÖGB", departure_time: "2014-04-24 09:04:00", arrival_time: "2014-04-24 09:28:00", final_location: "MÅP"},
+  {train_id: 69784, start_location: "MÅP", departure_time: "2014-04-24 15:55:00", arrival_time: "2014-04-24 16:16:00", final_location: "JÖGB"},
+  {train_id: 69788, start_location: "MÅP", departure_time: "2014-04-24 16:49:00", arrival_time: "2014-04-24 17:10:00", final_location: "JÖGB"}
+])
