@@ -25,19 +25,22 @@ class Timetable < ActiveRecord::Base
     if find_train(train_number)
       train = find_train(train_number)
       routes = [train] #add the train as the first route
-    end
-    # we search first to see if we find a route
-    # we reassign the train variable to the new train found
-    #if(train = find_next_route(train.end_date, train.end_location))
-    i = 0
-    while i <= Timetable.all.count do
-      if( train = find_next_route(routes[-1].arrival_time, routes[-1].final_location) )
-        routes << train
+
+      # we search first to see if we find a route
+      # we reassign the train variable to the new train found
+      #if(train = find_next_route(train.end_date, train.end_location))
+      i = 0
+      while i <= Timetable.all.count do
+        if( train = find_next_route(routes[-1].arrival_time, routes[-1].final_location) )
+          routes << train
+        end
+        i += 1
       end
-      i += 1
+      # at the end return the train and the routes
+      return routes
+    else
+
     end
-    # at the end return the train and the routes
-    return routes
   end
 
 

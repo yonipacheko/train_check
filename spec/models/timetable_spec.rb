@@ -1,14 +1,21 @@
 require 'rails_helper'
 describe Timetable do
 
-  it 'should find the train row by the train number requested' do
 
-    t1 = Timetable.create(train_id: '2345')
-    t2 = Timetable.create(train_id: '2323')
+  describe 'find the a right train' do
+    it 'should find the train row by the train number requested' do
+      t1 = Timetable.create(train_id: '2345')
+      t2 = Timetable.create(train_id: '2323')
+      expect(Timetable.find_train('2345')).to eq(t1)
+    end
 
-    expect(Timetable.find_train('2345')).to eq(t1)
+    it 'returns false if the user type an empty string' do
+      t1 = Timetable.create(train_id: '2345')
+      t2 = Timetable.create(train_id: '2323')
+
+      expect(Timetable.find_train('')).to eq(nil)
+    end
   end
-
   describe 'find next route' do
 
 

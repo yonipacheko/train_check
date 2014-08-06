@@ -6,8 +6,12 @@ Rails.application.routes.draw do
   root to:'timetables#index'
 
   resources :timetables, only: [:index] do
-
+    collection do
+      post '/search', to: 'timetables#search'
+    end
   end
+
+
 
 
   # Example of regular route:

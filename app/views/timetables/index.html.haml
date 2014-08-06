@@ -22,13 +22,17 @@
           %h1 Finder
         %fieldset.actions.control-group
           .controls
-            =form_tag timetables_path, class: 'span5' do
+            =form_tag search_timetables_path, class: 'span5' do
               %label.control-label Train number
               %input(type="text" placeholder="search for schedule " name= 'search_term')
               %button.btn(type="submit") Search
 %br
 %section.well.well-lg.well-center
-%ul.items-shell
-  =render 'shared/search'
+- @results.each do |train|
+  %ul.items-shell
+    %li
+    = train.train_id
+
+
 
 

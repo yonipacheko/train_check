@@ -34,7 +34,10 @@ gem  'nokogiri', '~> 1.6.1'
 gem 'awesome_print', :require => 'ap'
 gem 'draper'
 gem 'seed_dump'
+group :development do
+  gem 'pry'
 
+end
 
 group :test, :development do
   gem 'rspec-rails'
